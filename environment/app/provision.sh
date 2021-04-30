@@ -21,8 +21,6 @@ sudo npm install -g pm2
 
 npm install ~/project/app
 
-# Generate seeds
-node ~/project/app/seeds/seed.js
 
 sudo mv /etc/nginx/sites-available/default /etc/nginx/sites-available/backup
 
