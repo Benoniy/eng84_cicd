@@ -19,10 +19,10 @@ sudo apt-get install nodejs -y
 sudo npm install -g pm2
 
 
-npm install /home/ubuntu/project/app
+npm install ~/project/app
 
 # Generate seeds
-node /home/ubuntu/project/app/seeds/seed.js
+node ~/project/app/seeds/seed.js
 
 sudo mv /etc/nginx/sites-available/default /etc/nginx/sites-available/backup
 
