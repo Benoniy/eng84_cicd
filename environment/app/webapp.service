@@ -2,8 +2,10 @@
 Description=Web App
 
 [Service]
-ExecStart=/home/ubuntu/eng84_cicd/app/app.js
-Restart=always
+Type=simple
+Restart=on-failure
+Environment=NODE_PORT=3000
+ExecStart=/usr/bin/nodejs /home/ubuntu/eng84_cicd/app/app.js
 User=ubuntu
 # Note Debian/Ubuntu uses 'nogroup', RHEL/Fedora uses 'nobody'
 Group=nogroup
